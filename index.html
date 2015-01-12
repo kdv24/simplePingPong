@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <title>Ping Pong Website</title>
+  </head>
+  <body>
+    <div id="header">
+      <img src="img/Ping-Pong-Table.jpg" alt="pingpong">
+      <h1>Ping Pong</h1>
+    </div>
+
+    <div id="text-area">
+      <div class="rules">  
+        <h3>Here's the way the game works:</h3>
+        <ul>
+          <li>You will be prompted to enter a number,</li>
+          <li>The page will display every number up to that number,</li>
+          <li>For <em>multiples of three</em> the page prints <em>"ping"</em>,</li>
+          <li>For <em>multiples of five</em> the page prints <em>"pong"</em>,</li>
+          <li>And, for numbers that are <em>multiples of three <strong> and</strong> five,</em> the page prints <em>"ping-pong"</em>!</li>
+        </ul>
+       </div>
+       <div class="letsPlay">
+          <h3>Are you ready?</h3>
+            <div class="goButton">  
+              <button id="goButton" type="submit" class="btn btn-success">Yes, Let's Play!</button>  
+            </div>  
+            <div class="userForm">
+              <label for="userEntry">Enter your number here</label>
+              <input id="userEntry"class="form-control" type="text">
+            </div>
+            <div class="results">
+              <label for="resultsOutput">And, the results are...</label>
+                <form id="resultsOutput" type="text" class="form-control" > 
+            </div> 
+        </div>  
+      </div>
+    </div>  
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/scripts.js"></script>  
+  </body>
+</html>

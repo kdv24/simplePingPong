@@ -1,0 +1,58 @@
+body {
+	margin: 5%;
+}
+
+#header {
+	display: inline-block;
+	padding: 0%;
+	width: 100%;
+}
+
+img {
+	float: left;
+	width: 35%;
+}
+
+h1 {
+	float: left;
+	padding: 10% 5% 10% 5%;
+	font-size: 7em;
+}
+
+.rules {
+	padding: 0% 10% 5% 20%;
+}
+
+.rules h3 {
+	margin-top: 0%;
+}
+
+#goButton {
+	margin: 2% 40%;
+	font-size: 2rem;
+}
+
+.userForm {
+	display: none;
+	width: 160px;
+	margin: 2% 40%;
+
+}
+
+#userEntry {
+	min-height: 60px;
+	width: 160px;
+}
+
+#userEntry {
+	text-align: center;
+	font-size: 36px;
+
+}
+.results {
+	display: show;
+}
+
+#resultsOutput {
+	min-height: 100px;
+}
