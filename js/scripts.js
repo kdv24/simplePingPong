@@ -1,16 +1,27 @@
 
 $(function() {
+	submitOK = "true";
 	$("#goButton").click(function() {
 		$(".userForm").show();
 		$("#userEntry").submit(function() {
-			userInput = $("input#userEntry").val();
-			$(".resultsOutput").text(userInput);
+			var userInput = $("input#userEntry").parseInt();
+			$(".resultsOutput").number(userInput);
+	//  add response for just in case not integer
+	//  (eg, if not integer, give new prompt)
+	//	if (isNaN (userInput)) {
+	//		alert("Oops, try again.  You need to enter a number.");
+	//		submitOK = "false"	
+	//	}		
+	//	if (submitOK == "false") {
+	//		return false;
+	//	}
+
 		});
 
 	});
 
-	//  add response for just in case not integer
-	//  (eg, if not integer, give new prompt)
+
+
 	//? var n = 0;
 	//? var promptResponse = promptResponse;
 	//	for (n=0; n <= promptResponse; n+=1){
