@@ -33,7 +33,7 @@ h1 {
 }
 
 .userForm {
-	display: show;
+	display: none;
 	width: 160px;
 	margin: 2% 40%;
 

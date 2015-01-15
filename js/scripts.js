@@ -1,13 +1,18 @@
 
 $(document).ready(function() {
 	//submitOK = "true";
-	$("#goButton").click(function() {
-		$(".userForm").show();
-	});	
+	$(function() {
+		$("#goButton").click(function() {
+			$(".userForm").show();
+		});
+		$('#userEntry form').submit(function(event) {	
+			var userInput = $('#userEntry').val();
 
-	$("#userEntry").submit();
-		var userInput = ("input#userEntry");
-		console.log(userInput);
+			$('ul').text(userInput);
+			$('.resultsOutput').show();
+			event.preventDefault();
+		});	
+	});
 
 
 	
@@ -25,21 +30,19 @@ $(document).ready(function() {
 
 
 
+/*	for (var n=0; n <= userInput; n++){
+		if ((userInput%3 == 0) && (userInput%5 == 0)) {
+		  	console.log("ping-pong");
+		}
+		if (userInput%3 == 0) {
+			console.log("ping");
+		}
+		if (userInput%5 == 0) {
+			console.log("pong");
+		}	
+		else {
+			console.log(n)
+		}
+	}	
 
-	//? var n = 0;
-	//	for (n=0; n <= promptResponse; n+=1){
-		//  if ((userInput/3 % 0) && (userInput/5 % 0)) {
-		//  	println("ping-pong");
-		//		}
-		//	if (userInput/3 % 0) {
-		//		println("ping");
-		//		}
-		//	if (userInput/5 % 0) {
-		//		println("pong");
-		//		}	
-		//  else {
-		//		println(n)
-		//		}
-	//	}	
-
-//	$(".results").show();
+//	$(".results").show();*/
