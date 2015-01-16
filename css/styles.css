@@ -1,5 +1,6 @@
 body {
 	margin: 5%;
+	margin-bottom: 20%;
 }
 
 #header {
@@ -42,17 +43,18 @@ h1 {
 #userEntry {
 	min-height: 60px;
 	width: 160px;
-}
-
-#userEntry {
 	text-align: center;
 	font-size: 36px;
 
 }
 .results {
-	display: show;
+	display: none;
 }
 
 #resultsOutput {
 	min-height: 100px;
+}
+
+ul {
+	list-style: none;
 }

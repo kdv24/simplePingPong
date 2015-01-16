@@ -22,24 +22,30 @@
           <li>For <em>multiples of five</em> the page prints <em>"pong"</em>,</li>
           <li>And, for numbers that are <em>multiples of three <strong> and</strong> five,</em> the page prints <em>"ping-pong"</em>!</li>
         </ul>
-       </div>
-       <div class="letsPlay">
-          <h3>Are you ready?</h3>
-            <div class="goButton">  
-              <button id="goButton" type="submit" class="btn btn-success">Yes, Let's Play!</button>  
-            </div>  
+      </div>
+      <div class="letsPlay">
+        <h3>Are you ready?</h3>
+        <div class="goButton">  
+          <button id="goButton" type="submit" class="btn btn-success">Yes, Let's Play!</button>  
+        </div>  
+          <form>
             <div class="userForm">
               <label for="userEntry">Enter your number here</label>
               <input id="userEntry"class="form-control" type="text" type="submit">
             </div>
+          </form>  
             <div class="results">
               <label for="resultsOutput">And, the results are...</label>
-                <form id="resultsOutput" type="text" class="form-control" > 
-                <ul></ul></form>
+              <div id="resultsOutput" type="text">
+              <textarea rows="3">
+                <ul>
+                <li></li>
+                </ul>
+              </textarea>  
+              </div>
             </div> 
-        </div>  
-      </div>
-    </div>  
+      </div>  
+    </div>
     <script src="js/jquery-1.11.1.js"></script>
     <script src="js/scripts.js"></script>  
   </body>
