@@ -1,23 +1,33 @@
 body {
 	margin: 5%;
-	margin-bottom: 20%;
+	border: solid 3px darkgreen;
+	padding: 2px;
 }
 
 #header {
 	display: inline-block;
 	padding: 0%;
 	width: 100%;
+	border: solid 2px black;
+}
+
+#text-area {
+	background-color: #cccccc;
+	border: solid 2px black;		
 }
 
 img {
 	float: left;
 	width: 35%;
+	display: inline-block;
 }
 
 h1 {
 	float: left;
+	display: inline-block;
+	width: 60%;
 	padding: 10% 5% 10% 5%;
-	font-size: 7em;
+	font-size: 7rem;
 }
 
 .rules {
@@ -26,10 +36,16 @@ h1 {
 
 .rules h3 {
 	margin-top: 0%;
+	padding-top: 5%;
+}
+
+.letsPlay h3 {
+	padding-left: 5%;
 }
 
 #goButton {
-	margin: 2% 40%;
+	margin: 2% 45% 20% 35%;
+	display: center;
 	font-size: 2rem;
 }
 
@@ -43,18 +59,10 @@ h1 {
 #userEntry {
 	min-height: 60px;
 	width: 160px;
+}
+
+#userEntry {
 	text-align: center;
 	font-size: 36px;
 
-}
-.results {
-	display: none;
-}
-
-#resultsOutput {
-	min-height: 100px;
-}
-
-ul {
-	list-style: none;
 }
