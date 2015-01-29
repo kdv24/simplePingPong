@@ -1,7 +1,11 @@
 body {
 	margin: 5%;
+<<<<<<< HEAD
 	border: solid 3px darkgreen;
 	padding: 2px;
+=======
+	margin-bottom: 20%;
+>>>>>>> FETCH_HEAD
 }
 
 #header {
@@ -50,7 +54,7 @@ h1 {
 }
 
 .userForm {
-	display: none;
+	display: show;
 	width: 160px;
 	margin: 2% 40%;
 
@@ -59,10 +63,21 @@ h1 {
 #userEntry {
 	min-height: 60px;
 	width: 160px;
-}
-
-#userEntry {
 	text-align: center;
 	font-size: 36px;
 
 }
+<<<<<<< HEAD
+=======
+.results {
+	display: none;
+}
+
+#resultsOutput {
+	min-height: 100px;
+}
+
+ul {
+	list-style: none;
+}
+>>>>>>> FETCH_HEAD
