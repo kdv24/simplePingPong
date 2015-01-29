@@ -1,16 +1,16 @@
 
 $(document).ready(function() {
-	//submitOK = "true";
 	$(function() {
 		$("#goButton").click(function() {
 			$(".userForm").show();
 		});
-		$('#userEntry form').submit(function(event) {	
-			var userInput = $('#userEntry').val();
 
-			$('ul').text(userInput);
-			$('.resultsOutput').show();
-			event.preventDefault();
+//User enters number, which is then converted to variable
+// I can't figure out how to capture the submitted number
+
+		$('#userEntry').submit(function() {	
+			var userInput = parseInt('#userEntry');
+			alert(Math.round(userInput));
 		});	
 	});
 
@@ -20,16 +20,14 @@ $(document).ready(function() {
 	//  add response for just in case not integer
 	//  (eg, if not integer, give new prompt)
 	//	if (isNaN (userInput)) {
-	//		alert("Oops, try again.  You need to enter a number.");
-	//		submitOK = "false";	
+	//		alert("Oops, try again.  You need to enter a number.");	
 	//	}		
-	//	if (submitOK == "false") {
-	//		return false;
+	//	
 	//	}
 });
 
 
-
+/*******CODE BELOW WORKS IN JS CONSOLE************/
 /*	for (var n=0; n <= userInput; n++){
 		if ((userInput%3 == 0) && (userInput%5 == 0)) {
 		  	console.log("ping-pong");
